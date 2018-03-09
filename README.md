@@ -7,7 +7,7 @@ PowerShell script that runs a ping to a host and stores the result in an SQLite 
 I wrote this to check how often my internet connection is down.
 
 ## Parameters
-.\NetMonitor.ps1 -Hostname `some.host` -Database C:\Full\Path\to\SQLite.db
+.\NetMonitor.ps1 -Hostname `some.host` -Database `C:\Full\Path\to\SQLite.db`
 
 ## Requirements
 * [PowerShell](https://github.com/PowerShell/PowerShell)
