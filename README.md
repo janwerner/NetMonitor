@@ -1,6 +1,6 @@
 # NetMonitor
 ## What it does
-PowerShell script that runs an ICMP echo request ("ping") to 8.8.8.8 or a host of your choice using PowerShell's `Test-NetConnection` command and stores the result in an SQLite database. Can be run periodically, e.g. using Windows Task Scheduler.
+PowerShell script that runs an ICMP echo request ("ping") to 8.8.8.8 or a host of your choice using PowerShell's `Test-NetConnection` command and stores the result in an SQLite database. Date/Time is stored as [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time). Script can easily be run periodically, e.g. using Windows Task Scheduler.
 
 `powershell -ExecutionPolicy Bypass -Command C:\Path\to\NetMonitor\NetMonitor.ps1`
 
