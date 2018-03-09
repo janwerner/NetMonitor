@@ -3,6 +3,10 @@ param(
 [string]$Hostname = "8.8.8.8"
 )
 
+# Set $PSScriptRoot for PS < 3.0
+$PSScriptRoot = split-path -parent $MyInvocation.MyCommand.Definition
+
+echo $PSScriptRoot
 
 # Check for PSSQlite module
 if (-not (Get-Module -Name "PSSQLite")) {
